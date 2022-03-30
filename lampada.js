@@ -3,23 +3,23 @@ const turnOff = document.getElementById('turnOff');
 const lamp = document.getElementById('lamp');
 
 function isLampBroken () {
-    return lamp.scr.indexOf ('quebrada') > -1
+    return lamp.src.indexOf ('quebrada') > -1
 }
 
 function lampOn () {
     if (!isLampBroken ()) {
-        lamp.scr = './img.jpg/ligada.jpg';
+        lamp.src = './img.jpg/ligada.jpg';
     }
 }
 
 function lampOff () {
     if (!isLampBroken ()) {
-        lamp.scr = './img.jpg/desligada.jpg';
+        lamp.src = './img.jpg/desligada.jpg';
     }
 }
 
 function lampBroken () {
-    lamp.scr = './img.jpg/quebrada.jpg';
+    lamp.src = './img.jpg/quebrada.jpg';
 }
 
 turnOn.addEventListener ('click', lampOn);
